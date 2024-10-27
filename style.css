@@ -1,0 +1,145 @@
+.copy-link {
+    --height: 36px;
+    padding: 10px;
+    display: flex;
+    max-width: 265px;
+}
+
+.title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(50, 75, 120);
+    margin-left: 14px;
+    margin-bottom: 0; /* Elimina il margine inferiore per avvicinarlo al sottotitolo */
+    text-transform: uppercase;
+}
+
+.subtitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: bold;
+    color: rgb(90, 110, 150);
+    margin-left: 14px;
+    margin-top: 0; /* Elimina il margine superiore per avvicinarlo al titolo */
+    margin-bottom: 28px;
+}
+
+
+.body {
+    background-image: linear-gradient(to bottom, rgb(82, 120, 163) , white);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    justify-content: center;
+    width: 350px;
+    padding-top: 20px;
+    padding-bottom: 45px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-left: 5px;
+    margin-top: 30px;
+}
+
+.box {
+    width: 290px;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid black;
+    background-clip: border-box, content-box, padding-box;
+    background-color: whitesmoke;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-bottom: 45px;
+    padding-right: 15px;
+}
+
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    margin: 0 0 5px 14px;
+}
+
+.copy-link {
+    --height: 36px;
+    padding: 0;
+    display: flex;
+    max-width: 265px;
+    margin-left: 14px;
+}
+
+.copy-link + .text {
+    margin-top: 20px;
+}
+
+.copy-link-input {
+    width: 210px;
+    flex-grow: 1;
+    padding: 0 8px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-right: none;
+    outline: none;
+}
+
+.copy-link-input:hover {
+    background: #eeeeee;
+}
+
+.copy-link-button {
+    flex-shrink: 0;
+    width: var(--height);
+    height: var(--height);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #dddddd;
+    color: #333333;
+    outline: none;
+    border: 1px solid #cccccc;
+    cursor: pointer;
+}
+
+.copy-link-button:hover {
+    background: #cccccc;
+}
+
+.back-button-container {
+    display: flex;
+    justify-content: flex-start; /* Allinea a sinistra per seguire il margine del box */
+    margin-top: 20px; /* Margine superiore per distanziare dal contenuto precedente */
+    margin-left: 52px; /* Margine sinistro per allinearlo con il resto del contenuto */
+}
+
+.back-button {
+    padding: 10px 20px; /* Spaziatura interna del pulsante */
+    font-family: Arial, Helvetica, sans-serif; /* Font del pulsante */
+    font-size: 16px; /* Dimensione del testo */
+    color: white; /* Colore del testo */
+    background-color: rgb(50, 75, 120); /* Colore di sfondo */
+    border: none; /* Rimuove il bordo predefinito */
+    border-radius: 5px; /* Arrotonda gli angoli del pulsante */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra */
+    transition: background-color 0.3s; /* Transizione per l'effetto hover */
+}
+
+.back-button:hover {
+    background-color: rgb(40, 60, 90); /* Colore di sfondo al passaggio del mouse */
+}
+
+
+.back-button {
+    padding: 10px 20px; /* Spaziatura interna del pulsante */
+    font-family: Arial, Helvetica, sans-serif; /* Font del pulsante */
+    font-size: 16px; /* Dimensione del testo */
+    color: white; /* Colore del testo */
+    background-color: rgb(50, 75, 120); /* Colore di sfondo */
+    border: none; /* Rimuove il bordo predefinito */
+    border-radius: 5px; /* Arrotonda gli angoli del pulsante */
+    cursor: pointer; /* Cambia il cursore quando si passa sopra */
+    transition: background-color 0.3s; /* Transizione per l'effetto hover */
+}
+
+.back-button:hover {
+    background-color: rgb(40, 60, 90); /* Colore di sfondo al passaggio del mouse */
+}
