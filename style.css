@@ -17,7 +17,7 @@
 
 .subtitle {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     font-style: bold;
     color: rgb(90, 110, 150);
     margin-left: 14px;
@@ -25,32 +25,25 @@
     margin-bottom: 28px;
 }
 
-
 .body {
-    background-image: linear-gradient(to bottom, rgb(82, 120, 163) , white);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    justify-content: center;
-    width: 350px;
-    padding-top: 20px;
-    padding-bottom: 45px;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 5px;
-    margin-top: 30px;
+    padding: 20px;
 }
 
+.box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra il contenuto orizzontalmente */
+}
+
+/* Stili per il .box */
 .box {
     width: 290px;
-    display: flex;
-    flex-wrap: wrap;
     border: 3px solid black;
-    background-clip: border-box, content-box, padding-box;
     background-color: whitesmoke;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-bottom: 45px;
-    padding-right: 15px;
+    padding: 18px 22px 65px 22px;
+    margin-bottom: 20px;
 }
 
 
