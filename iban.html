@@ -162,7 +162,7 @@
                                                                 </button>
                                                             </div>
                                                         </div>
-                                                        <a href="URL_DEL_TUO_MENU" class="back-button">Torna al Menu Principale</a>
+                                                        <a href="https://falker47.github.io/PayMe" class="back-button">Torna al Menu Principale</a>
                                                     </div>
                                                 </div>
                                                 
@@ -231,66 +231,6 @@
             urlPrefix: "https://events.webnode.com/projects/-/events/",
             collection: "PROD",
         }</script>
-</body>
-
-</html>
-
-
-
-<body class="body">
-
-
-    <div class="box">
-        <p class="title">
-            BBVA
-        </p>
-        <p class="subtitle">
-            Banco Bilbao Vizcaya Argentaria
-        </p>
-        <p class="text">
-            Intestatario:
-        </p>
-        <div class="copy-link">
-            <input type="text" class="copy-link-input" value="Maurizio Falconi" readonly>
-            <button type="button" class="copy-link-button">
-                <span class="material-icons">content_copy</span>
-            </button>
-        </div>
-
-        <p class="text">
-            IBAN:
-        </p>
-        <div class="copy-link">
-            <input type="text" class="copy-link-input" value="IT86D0357601601010004835062" readonly>
-            <button type="button" class="copy-link-button">
-                <span class="material-icons">content_copy</span>
-            </button>
-        </div>
-    </div>
-
-    <script>
-        document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
-            const inputField = copyLinkParent.querySelector(".copy-link-input");
-            const copyButton = copyLinkParent.querySelector(".copy-link-button");
-            const text = inputField.value;
-
-            inputField.addEventListener("focus", () => inputField.select());
-
-            copyButton.addEventListener("click", () => {
-                inputField.select();
-                navigator.clipboard.writeText(text);
-
-                inputField.value = "Copied!";
-                setTimeout(() => (inputField.value = text), 750);
-            });
-        });
-    </script>
-
-<div class="back-button-container">
-    <a href="https://falker47.github.io/PayMe" class="back-button">Torna al Menu Principale</a>
-
-</div>
-
 </body>
 
 </html>
