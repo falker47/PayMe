@@ -116,23 +116,8 @@
     font-family: Arial, Helvetica, sans-serif; /* Font del pulsante */
     font-size: 16px; /* Dimensione del testo */
     color: white; /* Colore del testo */
-    background-color: rgb(50, 75, 120); /* Colore di sfondo */
-    border: none; /* Rimuove il bordo predefinito */
-    border-radius: 5px; /* Arrotonda gli angoli del pulsante */
-    cursor: pointer; /* Cambia il cursore quando si passa sopra */
-    transition: background-color 0.3s; /* Transizione per l'effetto hover */
-}
-
-.back-button:hover {
-    background-color: rgb(40, 60, 90); /* Colore di sfondo al passaggio del mouse */
-}
-
-
-.back-button {
-    padding: 10px 20px; /* Spaziatura interna del pulsante */
-    font-family: Arial, Helvetica, sans-serif; /* Font del pulsante */
-    font-size: 16px; /* Dimensione del testo */
-    color: white; /* Colore del testo */
+    text-align: center; /* Allinea il testo al centro */
+    text-decoration: none; /* Rimuove la sottolineatura */
     background-color: rgb(50, 75, 120); /* Colore di sfondo */
     border: none; /* Rimuove il bordo predefinito */
     border-radius: 5px; /* Arrotonda gli angoli del pulsante */
