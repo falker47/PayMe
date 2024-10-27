@@ -2,12 +2,12 @@
 <html class="no-js" prefix="og: https://ogp.me/ns#" lang="it">
 
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Bonifico Bancario</title>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonifico Bancario</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://duyn491kcolsw.cloudfront.net" crossorigin>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta charset="utf-8">
@@ -141,7 +141,7 @@
                                     <div class="s-c s-fs cf">
                                         <div class="ez cf wnd-no-cols">
                                             <div class="ez-c">
-                                                
+
                                                 <div class="body">
                                                     <div class="box-container">
                                                         <div class="box">
@@ -149,24 +149,27 @@
                                                             <p class="subtitle">Banco Bilbao Vizcaya Argentaria</p>
                                                             <p class="text">Intestatario:</p>
                                                             <div class="copy-link">
-                                                                <input type="text" class="copy-link-input" value="Maurizio Falconi" readonly>
+                                                                <input type="text" class="copy-link-input"
+                                                                    value="Maurizio Falconi" readonly>
                                                                 <button type="button" class="copy-link-button">
                                                                     <span class="material-icons">content_copy</span>
                                                                 </button>
                                                             </div>
                                                             <p class="text">IBAN:</p>
                                                             <div class="copy-link">
-                                                                <input type="text" class="copy-link-input" value="IT97B0306234210000002363946" readonly>
+                                                                <input type="text" class="copy-link-input"
+                                                                    value="IT97B0306234210000002363946" readonly>
                                                                 <button type="button" class="copy-link-button">
                                                                     <span class="material-icons">content_copy</span>
                                                                 </button>
                                                             </div>
                                                         </div>
-                                                        <a href="https://falker47.github.io/PayMe" class="back-button">Torna al Menu Principale</a>
+                                                        <a href="https://falker47.github.io/PayMe"
+                                                            class="back-button">Torna al Menu Principale</a>
                                                     </div>
                                                 </div>
-                                                
-                                                
+
+
                                             </div>
                                         </div>
                                     </div>
@@ -231,6 +234,24 @@
             urlPrefix: "https://events.webnode.com/projects/-/events/",
             collection: "PROD",
         }</script>
+
+    <script>
+        document.querySelectorAll(".copy-link").forEach((copyLinkParent) => {
+            const inputField = copyLinkParent.querySelector(".copy-link-input");
+            const copyButton = copyLinkParent.querySelector(".copy-link-button");
+            const text = inputField.value;
+
+            inputField.addEventListener("focus", () => inputField.select());
+
+            copyButton.addEventListener("click", () => {
+                inputField.select();
+                navigator.clipboard.writeText(text);
+
+                inputField.value = "Copied!";
+                setTimeout(() => (inputField.value = text), 750);
+            });
+        });
+    </script>
 </body>
 
 </html>
