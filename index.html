@@ -22,54 +22,13 @@
     <main class="container">
         <header class="hero">
             <h1>Send a Payment to <span class="highlight">Maurizio Falconi</span></h1>
-            <p class="subtitle">Use this page to send payments, donations, or reimbursements in a few clicks.</p>
-            <p class="disclaimer">No card data is stored on this site.</p>
         </header>
 
         <section class="payment-methods">
-            <!-- Card 1: PayPal -->
-            <div class="card glass card-paypal">
-                <div class="card-content">
-                    <h2>Pay with PayPal</h2>
-                    <p>Pay securely with your PayPal account or card.</p>
-                    <img src="assets/paypal.webp" alt="PayPal Logo" class="card-logo">
-                    <a href="https://paypal.me/falker47" target="_blank" rel="noopener noreferrer"
-                        class="btn btn-primary">
-                        Open PayPal
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Card 2: Satispay -->
-            <div class="card glass card-satispay">
-                <div class="card-content">
-                    <h2>Pay with Satispay</h2>
-                    <p>Use Satispay for quick, mobile payments.</p>
-                    <img src="assets/satispay.jpeg" alt="Satispay Logo" class="card-logo">
-                    <a href="https://www.satispay.com/app/match/link/user/S6Y-CON--C93AA867-ACBE-4F99-9F05-11CBA443A7F9"
-                        target="_blank" rel="noopener noreferrer" class="btn btn-accent">
-                        Open Satispay
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                            <polyline points="15 3 21 3 21 9"></polyline>
-                            <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Card 3: Bank Transfer -->
+            <!-- Card 1: Bank Transfer -->
             <div class="card glass card-bank">
                 <div class="card-content">
                     <h2>Bank Transfer</h2>
-                    <p>Use a classic SEPA bank transfer.</p>
 
                     <div class="bank-details">
                         <div class="detail-row">
@@ -97,6 +56,18 @@
                     <div id="toast" class="toast hidden">IBAN Copied!</div>
                 </div>
             </div>
+
+            <!-- Card 2: PayPal -->
+            <a href="https://paypal.me/falker47" target="_blank" rel="noopener noreferrer"
+                class="card glass card-paypal clickable-card">
+                <img src="assets/paypal.webp" alt="PayPal Logo" class="card-image-full">
+            </a>
+
+            <!-- Card 3: Satispay -->
+            <a href="https://www.satispay.com/app/match/link/user/S6Y-CON--C93AA867-ACBE-4F99-9F05-11CBA443A7F9"
+                target="_blank" rel="noopener noreferrer" class="card glass card-satispay clickable-card">
+                <img src="assets/satispay.jpeg" alt="Satispay Logo" class="card-image-full">
+            </a>
         </section>
     </main>
 
