@@ -231,11 +231,13 @@ body {
 .clickable-card.card-paypal,
 .clickable-card.card-paypal:hover {
     background: var(--color-paypal-dark);
+    border-color: var(--color-paypal-dark);
 }
 
 .clickable-card.card-satispay,
 .clickable-card.card-satispay:hover {
     background: var(--color-satispay);
+    border-color: var(--color-satispay);
 }
 
 .card-image-full {
@@ -404,11 +406,52 @@ footer a:hover {
 
 /* Responsive Tweaks */
 @media (max-width: 600px) {
-    .hero h1 {
-        font-size: 2.25rem;
+    .container {
+        padding: 1rem 1rem 0.5rem;
+        justify-content: flex-start;
     }
 
-    .container {
-        padding: 2rem 1rem;
+    .hero {
+        margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+        font-size: 1.75rem;
+        margin-bottom: 0;
+    }
+
+    .payment-methods {
+        gap: 1rem;
+    }
+
+    .card-content {
+        padding: 1.25rem 1.25rem 1.5rem;
+    }
+
+    .card h2 {
+        font-size: 1.25rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .bank-details {
+        padding: 0.85rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .detail-row {
+        margin-bottom: 0.4rem;
+    }
+
+    .btn {
+        padding: 0.7rem 1.25rem;
+        font-size: 0.95rem;
+    }
+
+    .clickable-card {
+        aspect-ratio: 5 / 2;
+    }
+
+    footer {
+        padding: 0.75rem 1rem;
     }
 }
